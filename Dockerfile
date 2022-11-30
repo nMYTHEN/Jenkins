@@ -35,6 +35,7 @@ RUN curl -sSl https://get.docker.com/ | sh
 RUN usermod -aG root jenkins
 RUN usermod -aG docker jenkins
 RUN service docker start
+RUN dockerd
 
 
 # #########################
